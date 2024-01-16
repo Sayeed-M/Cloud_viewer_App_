@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90266642259",
+    "project_id": "cloud-view-1",
+    "storage_bucket": "cloud-view-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90266642259:android:d039bcee9333a76c0523a6",
+        "android_client_info": {
+          "package_name": "com.example.cloud_viewer_servies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLVzoIYCnHuFgAm9PFuBmfmde_C1V7iyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
