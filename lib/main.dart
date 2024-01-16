@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: FirstScreen(),
     );
@@ -43,46 +44,52 @@ class _FirstScreenState extends State<FirstScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cloud Viwer'),
+        title: Text(
+          'Cloud Viwer',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.blue,
       ),
       body: Center(
-        child: Container(
-          child: Column(
-            children: <Widget>[
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => PickPage(),
-                    ),
-                  );
-                },
-                child: Text('open files'),
-              ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Upload_file(),
-                    ),
-                  );
-                },
-                child: Text('upload files'),
-              ),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MainPage(),
-                    ),
-                  );
-                },
-                child: Text('download files'),
-              ),
-            ],
+        child: Center(
+          child: Container(
+            child: Column(
+              children: <Widget>[
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PickPage(),
+                      ),
+                    );
+                  },
+                  child: Text('open files'),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Upload_file(),
+                      ),
+                    );
+                  },
+                  child: Text('upload files'),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MainPage(),
+                      ),
+                    );
+                  },
+                  child: Text('download files'),
+                ),
+              ],
+            ),
           ),
         ),
       ),

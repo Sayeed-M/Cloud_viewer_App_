@@ -19,13 +19,27 @@ class PickPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueAccent,
+      appBar: AppBar(
+        title: Text(
+          'Open Files ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
+      backgroundColor: Colors.blue[100],
       body: Center(
         child: TextButton(
           onPressed: () {
             _pickFile();
           },
-          child: Text('click me'),
+          style: TextButton.styleFrom(
+              backgroundColor: Colors.blue,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20))),
+          child: Text(
+            'Click to Open Any File ',
+            style: TextStyle(
+                fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),
+          ),
         ),
       ),
     );
